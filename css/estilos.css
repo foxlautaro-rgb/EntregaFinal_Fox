@@ -1,4 +1,4 @@
-/* Importación de Google Fonts: Archivo (títulos) e Inter (textos) */
+/* Archivo (titulos) , Inter (textos) */
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Inter:wght@400;600&display=swap');
 
 /* Paleta de colores inspirada en el ecosistema abisal */
@@ -19,7 +19,6 @@ body {
     color: var(--color-blanco);
 }
 
-/* Jerarquía tipográfica editorial con Archivo */
 h1, h2, h3, .navbar-brand {
     font-family: 'Archivo', sans-serif;
 }
@@ -33,7 +32,6 @@ h2 {
     max-width: 720px;
 }
 
-/* Fondos y superficies */
 .bg-abismo {
     background-color: var(--color-fondo);
 }
@@ -61,8 +59,6 @@ h2 {
 
 
 
-
-/* Acentos en Azul Bioluminiscente y Coral */
 .text-azul {
     color: var(--color-azul-acento);
 }
@@ -75,7 +71,7 @@ h2 {
     color: var(--color-gris-texto);
 }
 
-/* Etiquetas de peligro en escala de opacidad coral */
+/* Etiquetas de peligro*/
 .peligro-alto {
     background-color: rgba(255, 107, 74, 1);
     color: var(--color-blanco);
@@ -100,7 +96,6 @@ h2 {
     font-size: 0.75rem;
 }
 
-/* Botón principal: cambia de azul a coral con transición suave */
 .btn-azul {
     background-color: var(--color-azul-acento);
     color: var(--color-fondo);
@@ -114,7 +109,6 @@ h2 {
     color: var(--color-blanco);
 }
 
-/* Sobrescritura de clases predeterminadas de Bootstrap */
 .navbar-brand {
     font-size: 1.35rem;
 }
@@ -139,7 +133,7 @@ h2 {
     width: 100%;
 }
 
-/* Enlaces del pie de página */
+/* Pie de página */
 .enlace-footer {
     color: var(--color-gris-texto);
     text-decoration: none;

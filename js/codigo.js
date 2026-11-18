@@ -1,4 +1,3 @@
-/* Carga dinámica de los cinco océanos desde datos.json */
 const contenedorOceanos = document.getElementById("contenedor-oceanos");
 
 function cargarOceanos() {
