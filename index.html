@@ -12,18 +12,18 @@
 </head>
 <body class="bg-abismo text-white">
 
-    <!-- BARRA DE NAVEGACIÓN RESPONSIVA (BOOTSTRAP 5) -->
+<!-- BARRA NAVEGACIÓN -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-abismo border-bottom border-secondary py-3">
         <div class="container">
             <a class="navbar-brand fw-bold text-white" href="#inicio">
                 EL <span class="text-azul">ABISMO</span>
             </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="menuNavegacion">
+            <div class="collapse navbar-collapse" id="miMenu">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#oceanos">Océanos</a>
@@ -38,7 +38,12 @@
                         <a class="nav-link" href="#amenazas">Amenazas</a>
                     </li>
                     <li class="nav-item">
-                       <a class="nav-link" href="#conservacion">Conservación</a>
+                        <a class="nav-link" href="#conservacion">Conservación</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button type="button" class="btn btn-azul fw-semibold" data-bs-toggle="modal" data-bs-target="#modalConservacion">
+                            Sumá tu ayuda
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -46,27 +51,27 @@
     </nav>
 
     <!-- ENCABEZADO -->
- <header id="inicio" class="py-5">
-        <div class="container py-4">
+ <header id="inicio" class="py-5 border-bottom border-secondary">
+        <div class="container py-4" >
             <p class="color-etiquetas fw-semibold mb-2">ATLAS DIGITAL</p>
             
-            <!-- 1. Título grande -->
+            <!-- Titulo -->
             <h1 class="display-2 fw-bold mb-3">
                 Ecosistemas invisibles <span class="text-azul">bajo el océano.</span>
             </h1>
 
-            <!-- 2. Mini frase / Subtítulo -->
+            <!--Subtitulo -->
             <p class="fs-4 fw-semibold text-white mb-3">
                 Explorando la vida oculta en las profundidades marinas.
             </p>
 
-            <!-- 3. Textito descriptivo (con la clase lead pedida por la consigna) -->
+            <!-- Textito -->
             <p class="lead fs-6 text-secundario mb-4 ancho-intro">
                 Un atlas digital dedicado a explorar el mundo marino, conocer los cinco océanos, descubrir las especies que habitan las profundidades y comprender la urgencia de proteger sus ecosistemas.
             </p>
 
             <div class="d-flex flex-wrap gap-3">
-                <a href="#oceanos" class="btn btn-azul btn-lg fw-bold">Explorar los océanos</a>
+                <button type="button" class="btn btn-azul btn-lg fw-bold" data-bs-toggle="modal" data-bs-target="#modalConservacion"> Sumá tu ayuda </button>
                 <a href="#ecosistemas" class="btn btn-outline-light btn-lg">Sumergirse en el atlas</a>
             </div>
         </div>
@@ -74,7 +79,7 @@
 
     <main>
 
-        <!-- PRIMERA SECCIÓN: LOS OCÉANOS -->
+        <!-- PRIMERA SECCIÓN -->
         <section id="oceanos" class="py-5">
             <div class="container">
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
@@ -253,6 +258,61 @@
     </footer>
 
  
+<!--MODAL -->
+<div class="modal fade" id="modalConservacion" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content bg-abismo text-white border border-secondary">
+            
+    <div class="modal-header border-secondary">
+                <h5 class="modal-title fw-bold">Sumá tu ayuda a <span class="text-azul">El Abismo</span></h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <p class="text-secundario small mb-3">Completá tus datos para recibir novedades sobre expediciones marinas y campañas de conservación.</p>
+                
+        <form id="formularioAbismo" class="needs-validation" novalidate action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="2d618695-9ff6-43f4-bf04-d8523aa223c6">
+                
+         <div class="mb-3">
+              <label for="nombreUsuario" class="form-label">Nombre y Apellido</label>
+                        <input type="text" class="form-control" id="nombreUsuario" name="nombre" placeholder="Tu nombre" required>
+                        <div class="invalid-feedback">Ingresá tu nombre y apellido.</div>
+                    </div>
+
+        
+             <div class="mb-3">
+                      <label for="emailUsuario" class="form-label">Email</label>
+                   <input type="email" class="form-control" id="emailUsuario" name="email" placeholder="nombre@email.com" required>
+                        <div class="invalid-feedback">Ingresá un email válido.</div>
+                    </div>
+
+                 
+                    <div class="mb-3">
+                        <label for="oceanoInteres" class="form-label">Océano de interés</label>
+                        <select class="form-select" id="oceanoInteres" name="oceano" required>
+                            <option value="" selected disabled>Elegí un océano</option>
+                            <option value="pacifico">Océano Pacífico</option>
+                            <option value="atlantico">Océano Atlántico</option>
+                            <option value="indico">Océano Índico</option>
+                            <option value="austral">Océano Austral</option>
+                            <option value="artico">Océano Ártico</option>
+                        </select>
+                        <div class="invalid-feedback">Seleccioná un océano.</div>
+                    </div>
+
+                    <div class="d-flex justify-content-end gap-2 pt-2">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-azul fw-semibold">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
    
     <script src="js/codigo.js"></script>
