@@ -1,0 +1,42 @@
+[
+  {
+    "numero": "01",
+    "nombre": "Océano Pacífico",
+    "ubicacion": "Entre Asia, Oceanía y América.",
+    "superficie": "165.250.000 km²",
+    "profundidad": "10.924 m (Fosa de las Marianas)",
+    "caracteristicas": "Es el océano más extenso y profundo de la Tierra; alberga el Cinturón de Fuego y miles de islas volcánicas."
+  },
+  {
+    "numero": "02",
+    "nombre": "Océano Atlántico",
+    "ubicacion": "Entre América, Europa y África.",
+    "superficie": "106.460.000 km²",
+    "profundidad": "8.376 m (Fosa de Puerto Rico)",
+    "caracteristicas": "Segundo océano más grande; atravesado de norte a sur por la Dorsal Mesoatlántica y clave para el clima global."
+  },
+  {
+    "numero": "03",
+    "nombre": "Océano Índico",
+    "ubicacion": "Entre África, Asia y Australia.",
+    "superficie": "70.560.000 km²",
+    "profundidad": "7.258 m (Fosa de Java)",
+    "caracteristicas": "Es el océano más cálido del mundo; sus corrientes están fuertemente influenciadas por los vientos monzones."
+  },
+  {
+    "numero": "04",
+    "nombre": "Océano Austral",
+    "ubicacion": "Rodea completamente a la Antártida.",
+    "superficie": "21.960.000 km²",
+    "profundidad": "7.236 m (Fosa de las Sandwich del Sur)",
+    "caracteristicas": "Posee la corriente circumpolar más potente del planeta y aguas heladas ricas en nutrientes y krill."
+  },
+  {
+    "numero": "05",
+    "nombre": "Océano Ártico",
+    "ubicacion": "Región polar norte (Norteamérica, Europa y Asia).",
+    "superficie": "14.060.000 km²",
+    "profundidad": "5.450 m (Fosa de Litke)",
+    "caracteristicas": "El más pequeño y menos profundo; cubierto gran parte del año por banquisas de hielo marino."
+  }
+]

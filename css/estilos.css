@@ -1,0 +1,155 @@
+/* Importación de Google Fonts: Archivo (títulos) e Inter (textos) */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Inter:wght@400;600&display=swap');
+
+/* Paleta de colores inspirada en el ecosistema abisal */
+:root {
+    --color-fondo: #0a0e12;
+    --color-variante: #11161d;
+    --color-azul-acento: #58acd0;
+    --color-coral-acento: #ff6b4a;
+     --color-gris: #9a9a9a;
+    --color-blanco: #ffffff;
+    --color-gris-texto: #dce7f5;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    background-color: var(--color-fondo);
+    color: var(--color-blanco);
+}
+
+/* Jerarquía tipográfica editorial con Archivo */
+h1, h2, h3, .navbar-brand {
+    font-family: 'Archivo', sans-serif;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+.ancho-intro {
+    width: 100%;
+    max-width: 720px;
+}
+
+/* Fondos y superficies */
+.bg-abismo {
+    background-color: var(--color-fondo);
+}
+
+.tarjeta-conservacion {
+    background-color: var(--color-variante);
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.tarjeta-conservacion:hover {
+    border-color: var(--color-azul-acento) !important;
+    background-color: #0f0f24;
+}
+
+.tarjeta-amenazas {
+    background-color: var(--color-variante);
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.tarjeta-amenazas:hover {
+    border-color: var(--color-coral-acento) !important;
+    background-color: #211517;
+}
+
+
+
+
+
+/* Acentos en Azul Bioluminiscente y Coral */
+.text-azul {
+    color: var(--color-azul-acento);
+}
+
+.text-coral {
+    color: var(--color-coral-acento);
+}
+
+.text-secundario {
+    color: var(--color-gris-texto);
+}
+
+/* Etiquetas de peligro en escala de opacidad coral */
+.peligro-alto {
+    background-color: rgba(255, 107, 74, 1);
+    color: var(--color-blanco);
+    font-size: 0.75rem;
+}
+
+.peligro {
+    background-color: rgba(255, 107, 74, 0.7);
+    color: var(--color-blanco);
+    font-size: 0.75rem;
+}
+
+.peligro-medio {
+    background-color: rgba(255, 107, 74, 0.5);
+    color: var(--color-blanco);
+    font-size: 0.75rem;
+}
+
+.peligro-bajo {
+    background-color: rgba(255, 107, 74, 0.2);
+    color: var(--color-blanco);
+    font-size: 0.75rem;
+}
+
+/* Botón principal: cambia de azul a coral con transición suave */
+.btn-azul {
+    background-color: var(--color-azul-acento);
+    color: var(--color-fondo);
+    border: 1px solid var(--color-azul-acento);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-azul:hover {
+    background-color: var(--color-coral-acento);
+    border-color: var(--color-coral-acento);
+    color: var(--color-blanco);
+}
+
+/* Sobrescritura de clases predeterminadas de Bootstrap */
+.navbar-brand {
+    font-size: 1.35rem;
+}
+
+.nav-link {
+    color: var(--color-blanco);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-azul-acento);
+}
+
+.btn-outline-light {
+    border-color: var(--color-gris-texto);
+    color: var(--color-blanco);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Imagenes */
+.imagen-editorial {
+    width: 100%;
+}
+
+/* Enlaces del pie de página */
+.enlace-footer {
+    color: var(--color-gris-texto);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.enlace-footer:hover {
+    color: var(--color-coral-acento);
+}
+
+.color-etiquetas {
+    color: var(--color-gris);
+}
