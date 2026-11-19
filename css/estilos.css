@@ -1,5 +1,5 @@
 /* Archivo (titulos) , Inter (textos) */
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Inter:wght@400;600;700&display=swap');
 
 /* Paleta de colores inspirada en el ecosistema abisal */
 :root {
@@ -7,9 +7,10 @@
     --color-variante: #11161d;
     --color-azul-acento: #58acd0;
     --color-coral-acento: #ff6b4a;
-     --color-gris: #9a9a9a;
+    --color-gris: #9a9a9a;
     --color-blanco: #ffffff;
     --color-gris-texto: #dce7f5;
+    --color-borde: #6c757d;
 }
 
 body {
@@ -19,45 +20,51 @@ body {
     color: var(--color-blanco);
 }
 
-h1, h2, h3, .navbar-brand {
+/* Tipografia títulos */
+h1 {
     font-family: 'Archivo', sans-serif;
 }
 
 h2 {
+    font-family: 'Archivo', sans-serif;
     font-size: 2.25rem;
 }
 
-.ancho-intro {
-    width: 100%;
-    max-width: 720px;
+h3 {
+    font-family: 'Archivo', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.35rem;
 }
 
 .bg-abismo {
     background-color: var(--color-fondo);
 }
 
+/* Tarjetas */
 .tarjeta-conservacion {
     background-color: var(--color-variante);
-    transition: border-color 0.3s ease, background-color 0.3s ease;
+    border: 1px solid var(--color-borde);
+    transition: all 0.3s ease;
 }
 
 .tarjeta-conservacion:hover {
-    border-color: var(--color-azul-acento) !important;
+    border-color: var(--color-azul-acento);
     background-color: #0f0f24;
 }
 
 .tarjeta-amenazas {
     background-color: var(--color-variante);
-    transition: border-color 0.3s ease, background-color 0.3s ease;
+    border: 1px solid var(--color-borde);
+    transition: all 0.3s ease;
 }
 
 .tarjeta-amenazas:hover {
-    border-color: var(--color-coral-acento) !important;
+    border-color: var(--color-coral-acento);
     background-color: #211517;
 }
-
-
-
 
 .text-azul {
     color: var(--color-azul-acento);
@@ -69,6 +76,10 @@ h2 {
 
 .text-secundario {
     color: var(--color-gris-texto);
+}
+
+.texto-chico {
+    font-size: 0.875rem;
 }
 
 /* Etiquetas de peligro*/
@@ -96,11 +107,12 @@ h2 {
     font-size: 0.75rem;
 }
 
+/* Botones */
 .btn-azul {
     background-color: var(--color-azul-acento);
     color: var(--color-fondo);
     border: 1px solid var(--color-azul-acento);
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .btn-azul:hover {
@@ -109,23 +121,27 @@ h2 {
     color: var(--color-blanco);
 }
 
-.navbar-brand {
-    font-size: 1.35rem;
+.btn-borde {
+    background-color: transparent;
+    color: var(--color-blanco);
+    border: 1px solid var(--color-gris-texto);
+    transition: all 0.3s ease;
 }
 
+.btn-borde:hover {
+    background-color: var(--color-blanco);
+    border-color: var(--color-blanco);
+    color: var(--color-fondo);
+}
+
+/* Sobrescritura de Bootstrap: links de la navbar */
 .nav-link {
     color: var(--color-blanco);
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover {
     color: var(--color-azul-acento);
-}
-
-.btn-outline-light {
-    border-color: var(--color-gris-texto);
-    color: var(--color-blanco);
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Imagenes */
@@ -137,7 +153,7 @@ h2 {
 .enlace-footer {
     color: var(--color-gris-texto);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .enlace-footer:hover {

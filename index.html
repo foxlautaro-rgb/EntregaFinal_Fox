@@ -51,10 +51,10 @@
     </nav>
 
     <!-- ENCABEZADO -->
- <header id="inicio" class="py-5 border-bottom border-secondary">
-        <div class="container py-4" >
+    <header id="inicio" class="py-5 border-bottom border-secondary">
+        <div class="container py-4">
             <p class="color-etiquetas fw-semibold mb-2">ATLAS DIGITAL</p>
-            
+
             <!-- Titulo -->
             <h1 class="display-2 fw-bold mb-3">
                 Ecosistemas invisibles <span class="text-azul">bajo el océano.</span>
@@ -65,14 +65,18 @@
                 Explorando la vida oculta en las profundidades marinas.
             </p>
 
-            <!-- Textito -->
-            <p class="lead fs-6 text-secundario mb-4 ancho-intro">
-                Un atlas digital dedicado a explorar el mundo marino, conocer los cinco océanos, descubrir las especies que habitan las profundidades y comprender la urgencia de proteger sus ecosistemas.
-            </p>
+            <!-- Textito (la columna limita el ancho del párrafo) -->
+            <div class="row">
+                <div class="col-12 col-lg-7">
+                    <p class="lead fs-6 text-secundario mb-4">
+                        Un atlas digital dedicado a explorar el mundo marino, conocer los cinco océanos, descubrir las especies que habitan las profundidades y comprender la urgencia de proteger sus ecosistemas.
+                    </p>
+                </div>
+            </div>
 
-            <div class="d-flex flex-wrap gap-3">
-                <button type="button" class="btn btn-azul btn-lg fw-bold" data-bs-toggle="modal" data-bs-target="#modalConservacion"> Sumá tu ayuda </button>
-                <a href="#ecosistemas" class="btn btn-outline-light btn-lg">Sumergirse en el atlas</a>
+            <div class="d-flex flex-wrap">
+                <button type="button" class="btn btn-azul fw-bold fs-5 px-3 py-2 me-3 mb-3" data-bs-toggle="modal" data-bs-target="#modalConservacion"> Sumá tu ayuda </button>
+                <a href="#ecosistemas" class="btn btn-borde fs-5 px-3 py-2 mb-3">Sumergirse en el atlas</a>
             </div>
         </div>
     </header>
@@ -82,24 +86,24 @@
         <!-- PRIMERA SECCIÓN -->
         <section id="oceanos" class="py-5">
             <div class="container">
-                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4">
                     <div>
-             <p class="color-etiquetas fw-semibold mb-1">02 - GEOGRAFÍA OCEÁNICA</p>
-              <h2 class="display-5 fw-bold">Los cinco océanos</h2>
+                        <p class="color-etiquetas fw-semibold mb-1">02 - GEOGRAFÍA OCEÁNICA</p>
+                        <h2 class="display-5 fw-bold">Los cinco océanos</h2>
                     </div>
                     <p class="text-secundario mb-0">Ubicación geográfica, superficie aproximada y profundidad máxima.</p>
                 </div>
 
-                <!-- Grilla donde JS inserta las tarjetas desde datos.json -->
+                <!-- Grilla donde JS inserta las tarjetas desde mensaje.json -->
                 <div id="contenedor-oceanos" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 </div>
             </div>
         </section>
 
-  <!-- SEGUNDA SECCIÓN -->
+        <!-- SEGUNDA SECCIÓN -->
         <section id="vida-marina" class="py-5">
             <div class="container">
-                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-5">
                     <div>
                         <p class="color-etiquetas fw-semibold mb-1">03 - BIODIVERSIDAD</p>
                         <h2 class="display-5 fw-bold">Vida Marina</h2>
@@ -113,11 +117,11 @@
                         <span class="text-azul fw-bold fs-5">MAMÍFEROS</span>
                     </div>
                     <div class="col-12 col-md-7 my-2 my-md-0">
-                        <h3 class="h4 fw-bold mb-1">Ballena azul (<span class="fst-italic fw-normal">Balaenoptera musculus</span>), delfines y focas</h3>
+                        <h3 class="fs-4 fw-bold mb-1">Ballena azul (<span class="fst-italic fw-normal">Balaenoptera musculus</span>), delfines y focas</h3>
                         <p class="text-secundario mb-0">Hábitat: Océanos abiertos y regiones polares · Alimentación: Krill, peces pequeños y calamares · Adaptados a inmersiones profundas y comunicación acústica.</p>
                     </div>
                     <div class="col-12 col-md-3 d-flex justify-content-md-end">
-                        <span class="badge peligro-alto px-3 py-2">ALTO PELIGRO</span>
+                        <span class="peligro-alto rounded fw-bold px-3 py-1">ALTO PELIGRO</span>
                     </div>
                 </div>
 
@@ -127,11 +131,11 @@
                         <span class="text-azul fw-bold fs-5">REPTILES</span>
                     </div>
                     <div class="col-12 col-md-7 my-2 my-md-0">
-                        <h3 class="h4 fw-bold mb-1">Tortuga verde (<span class="fst-italic fw-normal">Chelonia mydas</span>) y serpientes marinas</h3>
+                        <h3 class="fs-4 fw-bold mb-1">Tortuga verde (<span class="fst-italic fw-normal">Chelonia mydas</span>) y serpientes marinas</h3>
                         <p class="text-secundario mb-0">Hábitat: Aguas tropicales y subtropicales · Alimentación: Pastos marinos, algas y peces de arrecife · Grandes migradoras oceánicas.</p>
                     </div>
                     <div class="col-12 col-md-3 d-flex justify-content-md-end">
-                        <span class="badge peligro px-3 py-2">PELIGRO</span>
+                        <span class="peligro rounded fw-bold px-3 py-1">PELIGRO</span>
                     </div>
                 </div>
 
@@ -141,11 +145,11 @@
                         <span class="text-azul fw-bold fs-5">PECES</span>
                     </div>
                     <div class="col-12 col-md-7 my-2 my-md-0">
-                        <h3 class="h4 fw-bold mb-1">Tiburón blanco (<span class="fst-italic fw-normal">Carcharodon carcharias</span>), rayas y peces de arrecife</h3>
+                        <h3 class="fs-4 fw-bold mb-1">Tiburón blanco (<span class="fst-italic fw-normal">Carcharodon carcharias</span>), rayas y peces de arrecife</h3>
                         <p class="text-secundario mb-0">Hábitat: Plataformas continentales y arrecifes · Alimentación: Depredadores tope y filtradores de plancton · Regulan el equilibrio trófico.</p>
                     </div>
                     <div class="col-12 col-md-3 d-flex justify-content-md-end">
-                        <span class="badge peligro-medio px-3 py-2">PELIGRO MEDIO</span>
+                        <span class="peligro-medio rounded fw-bold px-3 py-1">PELIGRO MEDIO</span>
                     </div>
                 </div>
 
@@ -155,11 +159,11 @@
                         <span class="text-azul fw-bold fs-5">INVERTEBRADOS</span>
                     </div>
                     <div class="col-12 col-md-7 my-2 my-md-0">
-                        <h3 class="h4 fw-bold mb-1">Pulpo Dumbo (<span class="fst-italic fw-normal">Grimpoteuthis</span>), medusas y octocorales</h3>
+                        <h3 class="fs-4 fw-bold mb-1">Pulpo Dumbo (<span class="fst-italic fw-normal">Grimpoteuthis</span>), medusas y octocorales</h3>
                         <p class="text-secundario mb-0">Hábitat: Desde arrecifes someros hasta 4.000 m de profundidad · Alimentación: Nieve marina y crustáceos · Muchos emiten luz por bioluminiscencia.</p>
                     </div>
                     <div class="col-12 col-md-3 d-flex justify-content-md-end">
-                        <span class="badge peligro-bajo px-3 py-2">PELIGRO BAJO</span>
+                        <span class="peligro-bajo rounded fw-bold px-3 py-1">PELIGRO BAJO</span>
                     </div>
                 </div>
             </div>
@@ -169,40 +173,35 @@
         <section id="ecosistemas" class="py-5">
             <div class="container">
                 <div class="row align-items-center g-5">
-        
+
                     <div class="col-12 col-lg-6">
                         <img src="img/imagen1.jpg" alt="Corales de aguas profundas en la oscuridad oceánica" class="img-fluid rounded border border-secondary imagen-editorial">
-                        <p class="text-secundario mt-2 small">CORALES DE AGUAS PROFUNDAS / JARDINES BENTÓNICOS SIN LUZ SOLAR</p>
+                        <p class="text-secundario mt-2 texto-chico">CORALES DE AGUAS PROFUNDAS / JARDINES BENTÓNICOS SIN LUZ SOLAR</p>
                     </div>
 
-            
-
-             <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
-             <p class="color-etiquetas fw-semibold mb-1">04 - ECOSISTEMAS MARINOS</p>
-             <h2 class="display-5 fw-bold mb-3">La vida que se abre paso en la oscuridad.</h2>
-                 <p class="text-secundario mb-4">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                        <p class="color-etiquetas fw-semibold mb-1">04 - ECOSISTEMAS MARINOS</p>
+                        <h2 class="display-5 fw-bold mb-3">La vida que se abre paso en la oscuridad.</h2>
+                        <p class="text-secundario mb-4">
                             Desde la luz solar de las costas hasta la oscuridad absoluta de las fosas abisales, cada ambiente submarino sostiene redes tróficas irremplazables.
                         </p>
 
-
-
                         <div class="border-top border-secondary py-3">
-                            <h3 class="h5 fw-bold text-azul mb-1">Arrecifes de coral y Aguas profundas</h3>
-                            <p class="text-secundario mb-0 small">Ubicación: Zonas tropicales y lechos abisales (+200 m) · Albergan más del 25% de la biodiversidad marina y capturan partículas de nieve marina.</p>
+                            <h3 class="fs-5 fw-bold text-azul mb-1">Arrecifes de coral y Aguas profundas</h3>
+                            <p class="text-secundario mb-0 texto-chico">Ubicación: Zonas tropicales y lechos abisales (+200 m) · Albergan más del 25% de la biodiversidad marina y capturan partículas de nieve marina.</p>
                         </div>
 
-
                         <div class="border-top border-secondary py-3">
-                            <h3 class="h5 fw-bold text-azul mb-1">Bosques de algas y Praderas marinas</h3>
-                            <p class="text-secundario mb-0 small">Ubicación: Costas templadas y fondos arenosos · Refugio de peces juveniles, tortugas y captura masiva de carbono azul.</p>
+                            <h3 class="fs-5 fw-bold text-azul mb-1">Bosques de algas y Praderas marinas</h3>
+                            <p class="text-secundario mb-0 texto-chico">Ubicación: Costas templadas y fondos arenosos · Refugio de peces juveniles, tortugas y captura masiva de carbono azul.</p>
                         </div>
 
                         <div class="border-top border-bottom border-secondary py-3">
-                         <h3 class="h5 fw-bold text-azul mb-1">Manglares</h3>
-                          <p class="text-secundario mb-0 small">Ubicación: Zonas intermareales tropicales · Protegen las costas contra tormentas y funcionan como criaderos naturales.</p>
+                            <h3 class="fs-5 fw-bold text-azul mb-1">Manglares</h3>
+                            <p class="text-secundario mb-0 texto-chico">Ubicación: Zonas intermareales tropicales · Protegen las costas contra tormentas y funcionan como criaderos naturales.</p>
                         </div>
+                    </div>
                 </div>
-             </div>
             </div>
         </section>
 
@@ -210,35 +209,28 @@
         <section id="amenazas" class="py-5 border-bottom border-secondary">
             <div class="container">
                 <div class="row g-4">
-                  
-                   
+
                     <!-- Amenazas -->
                     <div class="col-12 col-md-6">
-                        <div class="p-4 border border-secondary rounded h-100 tarjeta-amenazas">
+                        <div class="p-4 rounded h-100 tarjeta-amenazas">
                             <p class="text-coral fw-semibold mb-1">05 - IMPACTO HUMANO</p>
-                            <h2 class="h3 fw-bold mb-3">Amenazas Ambientales</h2>
-                                                        <img src="img/imagen3.jpg" alt="Arrecife con basura" class="img-fluid rounded mb-3 imagen-editorial">
-                            <ul class="list-unstyled text-secundario">
-                                <li class="mb-3"><strong class="text-white">Contaminación por plásticos:</strong> Residuos sintéticos que ingresan a las cadenas tróficas mediante microplásticos.</li>
-                                <li class="mb-3"><strong class="text-white">Sobrepesca:</strong> Extracción insostenible que agota poblaciones y altera el equilibrio ecológico.</li>
-                                <li class="mb-3"><strong class="text-white">Derrames de petróleo:</strong> Contaminación tóxica directa sobre fauna costera y bentónica.</li>
-                            </ul>
+                            <h2 class="fs-3 fw-bold mb-3">Amenazas Ambientales</h2>
+                            <img src="img/imagen3.jpg" alt="Arrecife con basura" class="img-fluid rounded mb-3 imagen-editorial">
+                            <p class="text-secundario mb-3"><strong class="text-white">Contaminación por plásticos:</strong> Residuos sintéticos que ingresan a las cadenas tróficas mediante microplásticos.</p>
+                            <p class="text-secundario mb-3"><strong class="text-white">Sobrepesca:</strong> Extracción insostenible que agota poblaciones y altera el equilibrio ecológico.</p>
+                            <p class="text-secundario mb-3"><strong class="text-white">Derrames de petróleo:</strong> Contaminación tóxica directa sobre fauna costera y bentónica.</p>
                         </div>
                     </div>
 
-                   
-                   
                     <!-- Conservación -->
                     <div id="conservacion" class="col-12 col-md-6">
-                        <div class="p-4 border border-secondary rounded h-100 tarjeta-conservacion">
+                        <div class="p-4 rounded h-100 tarjeta-conservacion">
                             <p class="text-azul fw-semibold mb-1">06 - ACCIÓN Y FUTURO</p>
-                            <h2 class="h3 fw-bold mb-3">Conservación Marina</h2>
+                            <h2 class="fs-3 fw-bold mb-3">Conservación Marina</h2>
                             <img src="img/imagen2.jpg" alt="Arrecife saludable con peces tropicales" class="img-fluid rounded mb-3 imagen-editorial">
-                            <ul class="list-unstyled text-secundario mb-0">
-                                <li class="mb-2"><strong class="text-white">Áreas marinas protegidas:</strong> Reservas libres de pesca extractiva para regenerar hábitats.</li>
-                                <li class="mb-2"><strong class="text-white">Restauración de arrecifes:</strong> Cultivo y trasplante de colonias de coral resistentes.</li>
-                                <li><strong class="text-white">Acciones individuales:</strong> Reducir plásticos de un solo uso y apoyar organizaciones de conservación.</li>
-                            </ul>
+                            <p class="text-secundario mb-2"><strong class="text-white">Áreas marinas protegidas:</strong> Reservas libres de pesca extractiva para regenerar hábitats.</p>
+                            <p class="text-secundario mb-2"><strong class="text-white">Restauración de arrecifes:</strong> Cultivo y trasplante de colonias de coral resistentes.</p>
+                            <p class="text-secundario mb-0"><strong class="text-white">Acciones individuales:</strong> Reducir plásticos de un solo uso y apoyar organizaciones de conservación.</p>
                         </div>
                     </div>
                 </div>
@@ -252,50 +244,48 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-md-6 mb-3 mb-md-0">
-                    <h2 class="h5 fw-bold text-white mb-1">EL <span class="text-azul">ABISMO </span></h2>
-                    <p class="text-secundario small mb-0">Todos los derechos reservados.</p>
+                    <h2 class="fs-5 fw-bold text-white mb-1">EL <span class="text-azul">ABISMO </span></h2>
+                    <p class="text-secundario texto-chico mb-0">Todos los derechos reservados.</p>
                 </div>
-                <div class="col-12 col-md-6 d-flex justify-content-md-end gap-4">
-                    <a href="#inicio" class="enlace-footer">Inicio</a>
-                    <a href="#oceanos" class="enlace-footer">Océanos</a>
-                    <a href="#vida-marina" class="enlace-footer">Vida Marina</a>
+                <div class="col-12 col-md-6 d-flex justify-content-md-end">
+                    <a href="#inicio" class="enlace-footer me-4">Inicio</a>
+                    <a href="#oceanos" class="enlace-footer me-4">Océanos</a>
+                    <a href="#vida-marina" class="enlace-footer me-4">Vida Marina</a>
                     <a href="https://oceanexplorer.noaa.gov/" target="_blank" class="enlace-footer">NOAA Ocean</a>
                 </div>
             </div>
         </div>
     </footer>
 
- 
+
 <!--MODAL -->
 <div class="modal fade" id="modalConservacion" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content bg-abismo text-white border border-secondary">
-            
-    <div class="modal-header border-secondary">
+
+            <div class="modal-header border-secondary">
                 <h5 class="modal-title fw-bold">Sumá tu ayuda a <span class="text-azul">El Abismo</span></h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="modal"></button>
             </div>
 
             <div class="modal-body">
-                <p class="text-secundario small mb-3">Completá tus datos para recibir novedades sobre expediciones marinas y campañas de conservación.</p>
-                
-        <form id="formularioAbismo" class="needs-validation" novalidate action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="2d618695-9ff6-43f4-bf04-d8523aa223c6">
-                
-         <div class="mb-3">
-              <label for="nombreUsuario" class="form-label">Nombre y Apellido</label>
+                <p class="text-secundario texto-chico mb-3">Completá tus datos para recibir novedades sobre expediciones marinas y campañas de conservación.</p>
+
+                <form id="formularioAbismo" class="needs-validation" novalidate action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="2d618695-9ff6-43f4-bf04-d8523aa223c6">
+
+                    <div class="mb-3">
+                        <label for="nombreUsuario" class="form-label">Nombre y Apellido</label>
                         <input type="text" class="form-control" id="nombreUsuario" name="nombre" placeholder="Tu nombre" required>
                         <div class="invalid-feedback">Ingresá tu nombre y apellido.</div>
                     </div>
 
-        
-             <div class="mb-3">
-                      <label for="emailUsuario" class="form-label">Email</label>
-                   <input type="email" class="form-control" id="emailUsuario" name="email" placeholder="nombre@email.com" required>
+                    <div class="mb-3">
+                        <label for="emailUsuario" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="emailUsuario" name="email" placeholder="nombre@email.com" required>
                         <div class="invalid-feedback">Ingresá un email válido.</div>
                     </div>
 
-                 
                     <div class="mb-3">
                         <label for="oceanoInteres" class="form-label">Océano de interés</label>
                         <select class="form-select" id="oceanoInteres" name="oceano" required>
@@ -309,8 +299,8 @@
                         <div class="invalid-feedback">Seleccioná un océano.</div>
                     </div>
 
-                    <div class="d-flex justify-content-end gap-2 pt-2">
-                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Cerrar</button>
+                    <div class="d-flex justify-content-end pt-2">
+                        <button type="button" class="btn btn-borde me-2" data-bs-dismiss="modal">Cerrar</button>
                         <button type="submit" class="btn btn-azul fw-semibold">Enviar</button>
                     </div>
                 </form>
@@ -322,7 +312,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-   
+
     <script src="js/codigo.js"></script>
 </body>
 </html>
