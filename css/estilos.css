@@ -1,7 +1,7 @@
 /* Archivo (titulos) , Inter (textos) */
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Inter:wght@400;600;700&display=swap');
 
-/* Paleta de colores inspirada en el ecosistema abisal */
+/* Paleta colores */
 :root {
     --color-fondo: #0a0e12;
     --color-variante: #11161d;
@@ -134,7 +134,6 @@ h3 {
     color: var(--color-fondo);
 }
 
-/* Sobrescritura de Bootstrap: links de la navbar */
 .nav-link {
     color: var(--color-blanco);
     transition: all 0.3s ease;
